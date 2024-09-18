@@ -3,7 +3,8 @@ from turtle import Turtle, exitonclick
 
 def baton():
     bob = Turtle()
-    bob.color("blue")
+    bob.speed(0)
+    bob.color("#1a08ef")
     bob.forward(180)
     bob.left(90)
     bob.forward(75)
@@ -23,9 +24,14 @@ def baton():
     bob.left(90)
     bob.forward(325)
     bob.penup()
-    bob.left(90)
-    bob.forward(500000)
-
+    bob.goto(80,200)
+    bob.pendown()
+    bob.right(100)
+    bob.begin_fill()
+    bob.color("#3426e1")
+    bob.setheading(90)
+    bob.circle(51,180)
+    bob.end_fill()
 
 
 
